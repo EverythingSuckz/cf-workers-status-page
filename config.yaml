@@ -15,10 +15,10 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: stream-wrench-gq # unique identifier
+  - id: invalid-gq # unique identifier
     name: File Stream Server
     description: 'Server of FileStreamBot.' # default=empty
-    url: 'https://stream.wrench.gq/' # URL to fetch
+    url: 'https://invalid.gq/status' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
